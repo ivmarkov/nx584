@@ -10,3 +10,8 @@ This is a very simple Home Assistant add-on for the [NX584 Interface Server](htt
   * Change [run.sh](run.sh) to reflect how you'll connect the NX584 server to the NX pannel. (Where it says `--connect 192.168.30.1:10000`)
 * Push your changes to your forked repository
 * Add your forked repository as a [Third-Party Add-On in Home Assistant](https://www.home-assistant.io/common-tasks/os#installing-third-party-add-ons)
+* If the add-on was installed successfully, you should see something like this in the `Logs` section of the add-on:
+  ```
+  TBD
+  ```
+* [Configure your NX584 Alarm Panel and Binary Sensors](https://www.home-assistant.io/integrations/nx584/) in Home Assistant
