@@ -11,3 +11,59 @@ arch:
   - i386
 ports:
   5007/tcp: 5007
+options:
+  connection:
+  - Serial
+  - TCP/IP
+  serial_device: "/dev/ttyS0"
+  serial_device_baudrate: 38400
+  host: "192.168.0.10"
+  port: 23
+  binary_protocol: false
+  eu_date_format: false
+  heartbeat_secs: 120
+  update_zone_names: false
+  zones: 4
+  zone_1_name: "zone_1"
+  zone_2_name: "zone_2"
+  zone_3_name: "zone_3"
+  zone_4_name: "zone_4"
+  zone_5_name: ""
+  zone_6_name: ""
+  zone_7_name: ""
+  zone_8_name: ""
+  zone_9_name: ""
+  zone_10_name: ""
+  zone_11_name: ""
+  zone_12_name: ""
+  zone_13_name: ""
+  zone_14_name: ""
+  zone_15_name: ""
+  zone_16_name: ""
+schema:
+  connection: list
+  serial_device: str(1,256)
+  serial_device_baudrate: int(1024,)
+  host: str(1,256)
+  port: port
+  binary_protocol: bool
+  eu_date_format: bool
+  heartbeat_secs: int(5,1024)
+  update_zone_names_from_nx584: bool
+  zones: int(1,16)
+  zone_1_name: str(0,32)
+  zone_2_name: str(0,32)
+  zone_3_name: str(0,32)
+  zone_4_name: str(0,32)
+  zone_5_name: str(0,32)
+  zone_6_name: str(0,32)
+  zone_7_name: str(0,32)
+  zone_8_name: str(0,32)
+  zone_9_name: str(0,32)
+  zone_10_name: str(0,32)
+  zone_11_name: str(0,32)
+  zone_12_name: str(0,32)
+  zone_13_name: str(0,32)
+  zone_14_name: str(0,32)
+  zone_15_name: str(0,32)
+  zone_16_name: str(0,32)

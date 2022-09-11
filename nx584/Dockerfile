@@ -14,9 +14,6 @@ RUN which python3
 # Verify package installation location
 RUN /usr/bin/nx584_server --help
 
-WORKDIR /usr/app/src
-COPY config.ini .
-
 # Copy data for add-on
 COPY run.sh /
 RUN chmod a+x /run.sh
