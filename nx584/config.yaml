@@ -3,6 +3,7 @@ description: "Interface to GE/CaddX/NetworkX alarm systems via NX-584/NX8E"
 version: "1.0.0"
 slug: "nx584"
 init: false
+uart: true
 arch:
   - aarch64
   - amd64
@@ -11,3 +12,10 @@ arch:
   - i386
 ports:
   5007/tcp: 5007
+options:
+  serial_dev: "/dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller-if00-port0"
+  serial_baud: "9600"
+schema:
+  serial_dev: "str?"
+  serial_baud: "str?"
+
