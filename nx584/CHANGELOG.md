@@ -1,0 +1,10 @@
+## 1.0.2
+- Expose data folder
+- Set config.ini path to data folder
+
+## 1.0.1
+- Expose serial ports
+- Define serial port configuration on add-ons options
+
+## 1.0.0
+- Original Add-On from https://github.com/ivmarkov/nx584
