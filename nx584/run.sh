@@ -8,7 +8,7 @@ serial_dev=$(bashio::config 'serial_dev')
 serial_baud=$(bashio::config 'serial_baud')
 
 DEBUG=""
-if bashio::config.true 'debug.enabled'; then
+if bashio::config.true 'debug_enabled'; then
   bashio::log.info " * DEBUG Mode ON..."
   DEBUG="--debug True "
 fi
