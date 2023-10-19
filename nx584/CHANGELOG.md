@@ -1,3 +1,6 @@
+## 1.0.3
+- Debug mode 
+  
 ## 1.0.2
 - Expose data folder
 - Set config.ini path to data folder
