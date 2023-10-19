@@ -19,7 +19,7 @@ options:
    enabled: true
    device: "/dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller-if00-port0"
    baud: "9600"
-  listen_address: "127.0.0.1"
+  listen_address: "0.0.0.0"
   debug_enabled: false
 schema:
   serial:
