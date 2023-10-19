@@ -1,6 +1,6 @@
 name: "NX-584"
 description: "Interface to GE/CaddX/NetworkX alarm systems via NX-584/NX8E"
-version: "1.0.3"
+version: "1.0.4"
 slug: "nx584"
 init: false
 uart: true
@@ -15,10 +15,16 @@ arch:
 ports:
   5007/tcp: 5007
 options:
-  serial_dev: "/dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller-if00-port0"
-  serial_baud: "9600"
+  serial:
+   enabled: true
+   device: "/dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller-if00-port0"
+   baud: "9600"
+  listen_address: "127.0.0.1"
   debug_enabled: false
 schema:
-  serial_dev: "str"
-  serial_baud: "str"
+  serial:
+   enabled: "bool"
+   device: "str"
+   baud: "str"
+  listen_address: "str"
   debug_enabled: "bool"
