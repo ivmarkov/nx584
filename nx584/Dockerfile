@@ -15,7 +15,8 @@ RUN which python3
 RUN /usr/bin/nx584_server --help
 
 WORKDIR /usr/app/src
-COPY config.ini .
+# config.ini to be created in run.sh
+# COPY config.ini .
 
 # Copy data for add-on
 COPY run.sh /
