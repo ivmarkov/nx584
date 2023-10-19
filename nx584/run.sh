@@ -10,7 +10,7 @@ serial_baud=$(bashio::config 'serial_baud')
 DEBUG=""
 if bashio::config.true 'debug_enabled'; then
   bashio::log.info " * DEBUG Mode ON..."
-  DEBUG="--debug True "
+  DEBUG="--debug "
 fi
 
 ## Start Serial Interface
