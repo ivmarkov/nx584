@@ -1,3 +1,7 @@
+## 1.0.4
+- Re-work config
+- Expose listener address
+  
 ## 1.0.3
 - Debug mode 
   
