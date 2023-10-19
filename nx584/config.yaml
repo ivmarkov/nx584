@@ -15,7 +15,8 @@ ports:
 options:
   serial_dev: "/dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller-if00-port0"
   serial_baud: "9600"
+  config_file: "# put here your config.ini file"
 schema:
-  serial_dev: "str?"
-  serial_baud: "str?"
-
+  serial_dev: "str"
+  serial_baud: "str"
+  config_file: "str"
