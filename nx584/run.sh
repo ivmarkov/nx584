@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 
-
+bashio::log.info $(cat /etc/os-release)
 bashio::log.info "Preparing to start..."
 
 listen_addr=$(bashio::config 'listen_address')
@@ -11,6 +11,9 @@ if bashio::config.true 'debug_enabled'; then
   DEBUG="--debug "
 fi
 
+# To-DO Build /data/config.ini dynamically taking config files
+config=$(bashio::config 'config')
+bashio::log.info "LOG: $config"
 
 # Serial
 if bashio::config.true 'serial.enabled'; then
