@@ -23,7 +23,6 @@ options:
    enabled: false
    host: "192.168.30.1"
    port: "10000"
-  listen_address: "0.0.0.0"
   config:
    max_zone: "4"
    zone_name_update: false
@@ -31,6 +30,9 @@ options:
    use_binary_protocol: false
    idle_time_heartbeat_seconds: "120"
    zones: "NX Main entrance,NX Kitchen,NX Despacho,NX Garage"
+  listen:
+   expose_port: false
+   address: "0.0.0.0"
   debug_enabled: false
 schema:
   serial:
@@ -48,5 +50,7 @@ schema:
    use_binary_protocol: "bool"
    idle_time_heartbeat_seconds: "str"
    zones: "str"
-  listen_address: "str"
+  listen:
+    expose_port: "bool"
+    address: "str"
   debug_enabled: "bool"
