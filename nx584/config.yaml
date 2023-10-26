@@ -47,6 +47,6 @@ schema:
    euro_date_format: "bool"
    use_binary_protocol: "bool"
    idle_time_heartbeat_seconds: "str"
-   zones: "list"
+   zones: "list(str)"
   listen_address: "str"
   debug_enabled: "bool"
