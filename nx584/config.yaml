@@ -30,11 +30,11 @@ options:
    euro_date_format: true
    use_binary_protocol: false
    idle_time_heartbeat_seconds: "120"
-  zones:
-   1: "NX Main entrance"
-   2: "NX Kitchen"
-   3: "NX Despacho"
-   4: "NX Garage"
+   zones:
+    1: "NX Main entrance"
+    2: "NX Kitchen"
+    3: "NX Despacho"
+    4: "NX Garage"
   debug_enabled: false
 schema:
   serial:
