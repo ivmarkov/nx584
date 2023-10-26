@@ -1,3 +1,6 @@
+## 1.0.5
+- Moving config.ini to add-on schema (initial dev)
+  
 ## 1.0.4
 - Re-work config
 - Expose listener address
