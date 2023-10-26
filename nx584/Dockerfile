@@ -2,7 +2,6 @@ ARG BUILD_FROM
 FROM $BUILD_FROM
 
 RUN apk add python3 py3-pip git
-
 RUN pip3 install --upgrade pip
 
 RUN git clone https://github.com/kk7ds/pynx584
@@ -17,6 +16,7 @@ RUN /usr/bin/nx584_server --help
 WORKDIR /usr/app/src
 # config.ini to be created in run.sh
 # COPY config.ini .
+COPY config.ini_template
 
 # Copy data for add-on
 COPY run.sh /
