@@ -19,12 +19,38 @@ options:
    enabled: true
    device: "/dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller-if00-port0"
    baud: "9600"
+  socat:
+   enabled: false
+   host: "192.168.30.1"
+   port: "10000"
   listen_address: "0.0.0.0"
+  config:
+   max_zone: "4"
+   zone_name_update: false
+   euro_date_format: true
+   use_binary_protocol: false
+   idle_time_heartbeat_seconds: "120"
+  zones:
+   1: "NX Main entrance"
+   2: "NX Kitchen"
+   3: "NX Despacho"
+   4: "NX Garage"
   debug_enabled: false
 schema:
   serial:
    enabled: "bool"
    device: "str"
    baud: "str"
+  socat:
+   enabled: "bool"
+   host: "str"
+   port: "str" 
+  config:
+   max_zone: "str"
+   zone_name_update: "bool"
+   euro_date_format: "bool"
+   use_binary_protocol: "bool"
+   idle_time_heartbeat_seconds: "str"
+   zones: "list"
   listen_address: "str"
   debug_enabled: "bool"
