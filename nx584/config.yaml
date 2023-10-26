@@ -1,6 +1,6 @@
 name: "NX-584"
 description: "Interface to GE/CaddX/NetworkX alarm systems via NX-584/NX8E"
-version: "1.0.4"
+version: "1.0.5"
 slug: "nx584"
 init: false
 uart: true
