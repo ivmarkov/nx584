@@ -3,7 +3,9 @@
 bashio::log.info $(cat /etc/os-release)
 bashio::log.info "Preparing to start..."
 
+docker_ip=$(ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}')
 listen_addr=$(bashio::config 'listen_address')
+bashio::log.info "Docker IP $docker_ip / Listener Address $listen_addr "
 
 DEBUG=""
 if bashio::config.true 'debug_enabled'; then
