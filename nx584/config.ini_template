@@ -1,0 +1,22 @@
+[config]
+max_zone = ###MAX_ZONE###
+zone_name_update = ###ZONE_NAME_UPDATE###
+
+# Set to true if your unit sends DD/MM dates instead of MM/DD
+euro_date_format = ###EURO_DATE_FORMAT###
+
+# Set To true if using binary protocol
+# Defaults to False
+use_binary_protocol = ###USE_BINARY_PROTOCOL###
+
+# Length of idle time before sending heartbeat keep alive
+# (This is useful with the NX590 as it disconnects idle connections in a
+# short period of time)
+# Defaults to 120 seconds
+idle_time_heartbeat_seconds = ###IDLE_TIME_HEARTBEAT###
+
+#[email]
+#fromaddr = security@foo.com
+#smtphost = imap.foo.com
+
+[zones]
