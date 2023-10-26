@@ -30,7 +30,6 @@ options:
    use_binary_protocol: false
    idle_time_heartbeat_seconds: "120"
    zones: "NX Main entrance,NX Kitchen,NX Despacho,NX Garage"
-  liste_address: "0.0.0.0"
   debug_enabled: false
 schema:
   serial:
@@ -48,5 +47,4 @@ schema:
    use_binary_protocol: "bool"
    idle_time_heartbeat_seconds: "str"
    zones: "str"
-  listen_address: "str"
   debug_enabled: "bool"
